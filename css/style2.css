@@ -1,0 +1,65 @@
+.twitter {
+    width: 100px;
+    height: 110px;
+    background-color: rgb(238, 149, 250);
+    background-image: url("../image/twitter.png");
+    animation-name: twtr;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+    position: absolute;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: 0px 0px; */
+  }
+  @keyframes twtr {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -350px 0px;
+    }
+  }
+  .cat-1 {
+    width: 220px;
+    height: 150px;
+    /* background-color: rgb(248, 20, 20); */
+    /* background-position: 0px 0px; */
+    background-image: url("../image/cat.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    animation-name: cat;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+    position: absolute;
+  }
+  @keyframes cat {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -875px 0px;
+    }
+  }
+  .parent {
+    width: 220px;
+    height: 150px;
+    position: relative;
+    /* background-color: aqua; */
+    animation-name: cat-par;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+  @keyframes cat-par {
+    0% {
+      /* background-position: 0px 0px; */
+      left: 0%;
+    }
+    100% {
+      /* background-position: -875px 0px; */
+      left: 100%;
+    }
+  }
